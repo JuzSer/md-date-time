@@ -14,7 +14,7 @@
         "level": "error"
     },
     "max_line_length": {
-        "value": 120,
+        "value": 130,
         "level": "error",
         "limitComments": true
     },

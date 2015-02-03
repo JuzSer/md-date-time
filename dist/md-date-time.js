@@ -94,7 +94,7 @@
               }
             },
             main: function() {
-              return $sce.trustAsHtml(scope._mode === 'date' ? _dateFilter(scope.date, 'd') : "" + (_dateFilter(scope.date, 'h:mm')) + "<small>" + (_dateFilter(scope.date, 'a')) + "</small>");
+              return $sce.trustAsHtml(scope._mode === 'date' ? _dateFilter(scope.date, 'd') : (_dateFilter(scope.date, 'h:mm')) + "<small>" + (_dateFilter(scope.date, 'a')) + "</small>");
             },
             sub: function() {
               if (scope._mode === 'date') {
@@ -116,7 +116,7 @@
               return _results;
             })(),
             offsetMargin: function() {
-              return "" + (new Date(this._year, this._month).getDay() * 2.7) + "rem";
+              return (new Date(this._year, this._month).getDay() * 2.9) + "rem";
             },
             isVisible: function(d) {
               return new Date(this._year, this._month, d).getMonth() === this._month;
